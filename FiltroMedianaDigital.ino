@@ -8,7 +8,8 @@ int i,j;
 void loop() {
   pot= analogRead(A0);
   vo = (pot*5)/1023; //Voltaje acondicionado en A0
-  x3 = vo*0.3/5; //Voltaje Normal
+  vf = vo*0.3/5; //Voltaje Normal
+  x3= vf/0.01; //Temperatura
   X[0]=x1;
   X[1]=x2;
   X[2]=x3;
